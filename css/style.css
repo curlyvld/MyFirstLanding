@@ -41,6 +41,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400;}
 .header {
   margin-bottom: 40px;
 
+
 }
 .header__container {
   display: flex;
@@ -56,6 +57,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400;}
   padding: 0 15px;
   
 }
+
 .nav {
   
 }
@@ -84,9 +86,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400;}
   width:82px;
 }
 
+
 .content {
 }
 .content__container {
+}
+.content__burger{
+  display: none;
 }
 .content__main {
 }
@@ -300,11 +306,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400;}
   text-align: center;
   color: #828282;
 }
+
 @media (max-width: 1200px) {
   .container{
     max-width: 970px;
   }
-
 
 }
 @media (max-width: 992px) {
@@ -322,17 +328,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400;}
 
 }
 @media (max-width: 767px) {
-  .header{
-    display: none;
-  }
   .content__img-phone {
     display: block;
   }
   .content__img-pc {
     display: none;
-  }
-  .content__container {
-    padding-top: 65px;
   }
   .container{
     max-width: none;
@@ -340,7 +340,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400;}
   .portfolio__content-item p{
     margin-bottom: 20px;
   }
-  
+  .content{
+    padding-top: 68px;
+  }
   .content__text{
     display: flex;
     flex-direction: column;
@@ -371,5 +373,49 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400;}
   .contacts__btn{
     min-width: 100%;
   }
-  
+  .content__burger{
+    max-width: 767px;
+    display: block;
+  }
+  .content__burger-img{
+    cursor: pointer;
+    margin-left: auto;
+    max-width: 33px;
+  }
+  .content__burger-img img{
+    display: inline-block;
+    text-align: right;
+  }
+  .content{
+    padding: 0;
+  }
+  .nav__menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 80%;
+    background-color: #FFFFFF;
+    padding: 10px;
+    display: none;
+  }
+  .nav__menu li{
+    font-size: 34px;
+    line-height: 42px;
+    margin-bottom: 30px;
+  }
+  .nav__menu li:last-child{
+    margin-bottom: 100px;
+  }
+
+  .nav__menu.show {
+    display: block;
+  }
+  .header__container{
+    border:none;
+  }
+  .header{
+    margin-bottom: 0;
+  }
 }

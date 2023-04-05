@@ -13,22 +13,30 @@
     <div class="header__container container">
       <nav class="nav">
         <ul class="nav__menu">
-          <li class="nav__menu-item"><a href="" class="nav__menu-link">Home</a></li>
-          <li class="nav__menu-item"><a href="" class="nav__menu-link">About me</a></li>
-          <li class="nav__menu-item"><a href="" class="nav__menu-link">Skills</a></li>
-          <li class="nav__menu-item"><a href="" class="nav__menu-link">Portfolio</a></li>
-          <li class="nav__menu-item"><a href="" class="nav__menu-link">Contacts</a></li>
+          <li class="nav__menu-item"><a data-goto=".content" href="#" class="nav__menu-link">Home</a></li>
+          <li class="nav__menu-item"><a data-goto=".about" href="#" class="nav__menu-link">About me</a></li>
+          <li class="nav__menu-item"><a data-goto=".skills" href="#" class="nav__menu-link">Skills</a></li>
+          <li class="nav__menu-item"><a data-goto=".portfolio" href="#" class="nav__menu-link">Portfolio</a></li>
+          <li class="nav__menu-item"><a data-goto=".contacts" href="#" class="nav__menu-link">Contacts</a></li>
         </ul>
       </nav>
+      
     </div>
   </header>
 
+ 
+
   <div class="content">
     <div class="content__container container">
+      <div class="content__burger">
+        <div class="content__burger-img">
+          <img src="./img/icons/burgericon.svg" alt="">
+        </div>
+      </div>
       <div class="content__main">
         <div class="content__text">
           <div class="content__title-1">Denis Novik</div>
-          <p class="content__text__center">UX | UI designer 24 years old, Minsk</p>
+          <p class="content__text__center">UX | UI designer24 years old, Minsk</p>
           <p class="content__text__right">RU | ENG</p>
         </div>
         <div class="content__image">
@@ -40,7 +48,7 @@
     
   </div>
 
-  <div class="about">
+  <div class="about" id="about">
     <div class="about__container container">
       <div class="about__main">
         <div class="about__title title">About me</div>
@@ -53,7 +61,7 @@
     </div>
   </div>
 
-  <div class="skills">
+  <div class="skills" id="skills">
     <div class="skills__container container">
       <div class="skills__main">
         <div class="skills__title title">Skills</div>
@@ -121,7 +129,7 @@
     </div>
   </div>
 
-  <div class="portfolio">
+  <div class="portfolio" id="portfolio">
     <div class="portfolio__container container">
       <div class="portfolio__title title">Portfolio</div>
       <div class="portfolio__content">
@@ -141,7 +149,7 @@
     </div>
   </div>
 
-  <div class="contacts">
+  <div class="contacts" id="contacts">
     <div class="contacts__container container">
       <div class="contacts__main">
         <div class="contacts__title title">Contacts</div>
@@ -158,5 +166,7 @@
       </div>
     </div>
   </div>
+
+  <script src="./js/script.js"></script>
 </body>
 </html>
